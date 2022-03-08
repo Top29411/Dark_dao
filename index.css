@@ -1,0 +1,365 @@
+@import url(https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.cover {
+    background-image: url('./4979495.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #6950d0;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.navbar a.navbar-brand {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+}
+
+.navbar a.nav-link {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.navbar a.pxl {
+    color: #faba60;
+}
+
+.navbar a.nav-link:hover {
+    text-underline-position: under;
+    color: #0a58ca;
+    background-color: #ed9419;
+    border-radius: 10px;
+}
+
+.navbar .nav-item svg:hover {
+    color: #0a58ca;
+}
+
+
+/* ----------------------------------- Top section ----------------------------------- */
+
+.main {
+    height: 90vh;
+    background-color: #6950d0;
+    color: #ffff;
+}
+
+.time h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.time h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+button.mintBtn {
+    background-color: #ed9419;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #930;
+    border: 6px solid #f94;
+    padding: 16px 30px 8px;
+    box-shadow: 0 10px 0 #d61, 0 0 30px rgb(0 0 0 / 30%);
+}
+
+
+button.mintBtn:hover {
+    background-color: #e4a958;
+    color: white;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.mint select,
+.mint select:focus {
+    background-color: #ed9419;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    border: none;
+}
+
+.main .left span {
+    background-color: rgb(53, 53, 53);
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .main .left span {
+        font-size: 20px;
+    }
+    .main .left h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .main {
+        height: 100%;
+        padding: 20px 0;
+    }
+}
+
+
+/* --------------------------------- Fang Who ---------------------------------- */
+
+.fang-who {
+    background-color: #262022;
+    color: white;
+}
+
+.fang-who .content {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.fang-who .content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width:786px) {
+    .fang-who .content img {
+        width: 400px;
+    }
+}
+
+
+/* ---------------------------------- Road map --------------------------- */
+
+.roadmap {
+    background-color: #6950d0;
+    color: #ffff;
+}
+
+.roadmap .right .percent {
+    font-size: 25px;
+    font-weight: 700;
+    background-color: rgb(31, 31, 31);
+    border-radius: 5px;
+}
+
+.roadmap .right .text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* -------------------------------- Rarity ------------------------------- */
+
+.rarity {
+    background-color: #262022;
+    color: white;
+}
+
+.rarity p {
+    font-size: 18px;
+}
+
+
+/* ----------------------------------- Charity -------------------------------- */
+
+.charity {
+    background-color: #6950d0;
+    color: #ffff;
+}
+
+.charity p {
+    font-size: 18px;
+}
+
+.charity a {
+    color: #ed9419;
+}
+
+
+/* ----------------------------------------- Merch store ------------------------------- */
+
+.merch {
+    background-color: #262022;
+    color: white;
+}
+
+.merch p {
+    font-size: 18px;
+}
+
+@media screen and (max-width:786px) {
+    .merch-store img {
+        width: 250px;
+    }
+}
+
+
+/* --------------------------------------- FAQs---------------------------------------------- */
+
+.faq {
+    background-color: #6950d0;
+    color: #ffff;
+}
+
+.accordion .fa {
+    margin-right: 10px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.accordion .card-header {
+    background-color: #262022;
+}
+
+.accordion .card {
+    font-size: 18px;
+    background: none;
+    color: white;
+    border: none;
+}
+
+.accordion button {
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 786px) {
+    .accordion button {
+        font-size: 20px;
+        text-align: left;
+    }
+    .accordion .card {
+        font-size: 15px;
+    }
+    .faq img {
+        width: 300px;
+    }
+}
+
+
+/* -------------------------------------- Team ------------------------------------- */
+
+.team {
+    background-color: #6950d0;
+    color: #ffff;
+}
+
+.team .team1 {
+    background-color: #262022;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.team .team1:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #353535;
+}
+
+.team .team1:hover h4,
+.team .team1:hover p {
+    text-shadow: 0 0 10px #ed9419;
+}
+
+.team .team1 img {
+    border-radius: 10px;
+}
+
+.team hr {
+    border-color: #474747;
+}
+
+.team a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:576px) {
+    .team .profile-pic {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .team .heading {
+        width: 90%;
+    }
+}
+
+
+/* ------------------------------ Footer -------------------------- */
+
+.footer {
+    background-color: #262022;
+    color: white
+}
+
+
+
+.snow{
+
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: url('./images/Untitled-1.png'), url('./images/Untitled-2.png'), url('./images/Untitled-3.png');
+    z-index:100;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+  }
+  @keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  @-moz-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+  }
+  @-webkit-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  @-ms-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+
+

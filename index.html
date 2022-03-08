@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="snow.scss"> -->
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top py-0">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" alt="" srcset=""></a>
+            <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link pxl" href="#">Canaries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rarity">Rarity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://opensea.io/collection/canarypunknft" target="_blank" rel="noreferrer"><svg width="35px" height="35px" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 0C20.151 0 0 20.151 0 45C0 69.849 20.151 90 45 90C69.849 90 90 69.849 90 45C90 20.151 69.858 0 45 0ZM22.203 46.512L22.392 46.206L34.101 27.891C34.272 27.63 34.677 27.657 34.803 27.945C36.756 32.328 38.448 37.782 37.656 41.175C37.323 42.57 36.396 44.46 35.352 46.206C35.217 46.458 35.073 46.71 34.911 46.953C34.839 47.061 34.713 47.124 34.578 47.124H22.545C22.221 47.124 22.032 46.773 22.203 46.512ZM74.376 52.812C74.376 52.983 74.277 53.127 74.133 53.19C73.224 53.577 70.119 55.008 68.832 56.799C65.538 61.38 63.027 67.932 57.402 67.932H33.948C25.632 67.932 18.9 61.173 18.9 52.83V52.56C18.9 52.344 19.08 52.164 19.305 52.164H32.373C32.634 52.164 32.823 52.398 32.805 52.659C32.706 53.505 32.868 54.378 33.273 55.17C34.047 56.745 35.658 57.726 37.395 57.726H43.866V52.677H37.467C37.143 52.677 36.945 52.299 37.134 52.029C37.206 51.921 37.278 51.813 37.368 51.687C37.971 50.823 38.835 49.491 39.699 47.97C40.284 46.944 40.851 45.846 41.31 44.748C41.4 44.55 41.472 44.343 41.553 44.145C41.679 43.794 41.805 43.461 41.895 43.137C41.985 42.858 42.066 42.57 42.138 42.3C42.354 41.364 42.444 40.374 42.444 39.348C42.444 38.943 42.426 38.52 42.39 38.124C42.372 37.683 42.318 37.242 42.264 36.801C42.228 36.414 42.156 36.027 42.084 35.631C41.985 35.046 41.859 34.461 41.715 33.876L41.661 33.651C41.553 33.246 41.454 32.868 41.328 32.463C40.959 31.203 40.545 29.97 40.095 28.818C39.933 28.359 39.753 27.918 39.564 27.486C39.294 26.82 39.015 26.217 38.763 25.65C38.628 25.389 38.52 25.155 38.412 24.912C38.286 24.642 38.16 24.372 38.025 24.111C37.935 23.913 37.827 23.724 37.755 23.544L36.963 22.086C36.855 21.888 37.035 21.645 37.251 21.708L42.201 23.049H42.219C42.228 23.049 42.228 23.049 42.237 23.049L42.885 23.238L43.605 23.436L43.866 23.508V20.574C43.866 19.152 45 18 46.413 18C47.115 18 47.754 18.288 48.204 18.756C48.663 19.224 48.951 19.863 48.951 20.574V24.939L49.482 25.083C49.518 25.101 49.563 25.119 49.599 25.146C49.725 25.236 49.914 25.38 50.148 25.56C50.337 25.704 50.535 25.884 50.769 26.073C51.246 26.46 51.822 26.955 52.443 27.522C52.605 27.666 52.767 27.81 52.92 27.963C53.721 28.71 54.621 29.583 55.485 30.555C55.728 30.834 55.962 31.104 56.205 31.401C56.439 31.698 56.7 31.986 56.916 32.274C57.213 32.661 57.519 33.066 57.798 33.489C57.924 33.687 58.077 33.894 58.194 34.092C58.554 34.623 58.86 35.172 59.157 35.721C59.283 35.973 59.409 36.252 59.517 36.522C59.85 37.26 60.111 38.007 60.273 38.763C60.327 38.925 60.363 39.096 60.381 39.258V39.294C60.435 39.51 60.453 39.744 60.471 39.987C60.543 40.752 60.507 41.526 60.345 42.3C60.273 42.624 60.183 42.93 60.075 43.263C59.958 43.578 59.85 43.902 59.706 44.217C59.427 44.856 59.103 45.504 58.716 46.098C58.59 46.323 58.437 46.557 58.293 46.782C58.131 47.016 57.96 47.241 57.816 47.457C57.609 47.736 57.393 48.024 57.168 48.285C56.97 48.555 56.772 48.825 56.547 49.068C56.241 49.437 55.944 49.779 55.629 50.112C55.449 50.328 55.251 50.553 55.044 50.751C54.846 50.976 54.639 51.174 54.459 51.354C54.144 51.669 53.892 51.903 53.676 52.11L53.163 52.569C53.091 52.641 52.992 52.677 52.893 52.677H48.951V57.726H53.91C55.017 57.726 56.07 57.339 56.925 56.61C57.213 56.358 58.482 55.26 59.985 53.604C60.039 53.541 60.102 53.505 60.174 53.487L73.863 49.527C74.124 49.455 74.376 49.644 74.376 49.914V52.812V52.812Z" fill="white"></path></svg></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://discord.gg/JQj2qgs5g6" target="_blank" rel="noreferrer"><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="35px" height="35px"><path d="M42.298,11.65c-0.676-1.021-1.633-1.802-2.768-2.256c-2.464-0.988-4.583-1.648-6.479-2.02	C31.721,7.114,30.404,7.768,29.771,9l-0.158,0.308c-1.404-0.155-2.895-0.207-4.593-0.164c-1.741-0.042-3.237,0.009-4.643,0.164	L20.22,9c-0.633-1.232-1.952-1.885-3.279-1.625c-1.896,0.371-4.016,1.031-6.479,2.02c-1.134,0.454-2.091,1.234-2.768,2.256	c-4.721,7.131-6.571,14.823-5.655,23.517c0.032,0.305,0.202,0.578,0.461,0.741c3.632,2.29,6.775,3.858,9.891,4.936	c1.303,0.455,2.748-0.054,3.517-1.229l1.371-2.101c-1.092-0.412-2.158-0.9-3.18-1.483c-0.479-0.273-0.646-0.884-0.373-1.363	c0.273-0.481,0.884-0.65,1.364-0.373c3.041,1.734,6.479,2.651,9.942,2.651s6.901-0.917,9.942-2.651	c0.479-0.277,1.09-0.108,1.364,0.373c0.273,0.479,0.106,1.09-0.373,1.363c-1.056,0.603-2.16,1.105-3.291,1.524l1.411,2.102	c0.581,0.865,1.54,1.357,2.528,1.357c0.322,0,0.647-0.053,0.963-0.161c3.125-1.079,6.274-2.649,9.914-4.944	c0.259-0.163,0.429-0.437,0.461-0.741C48.869,26.474,47.019,18.781,42.298,11.65z M18.608,28.983c-1.926,0-3.511-2.029-3.511-4.495	c0-2.466,1.585-4.495,3.511-4.495s3.511,2.029,3.511,4.495C22.119,26.954,20.534,28.983,18.608,28.983z M31.601,28.957	c-1.908,0-3.478-2.041-3.478-4.522s1.57-4.522,3.478-4.522c1.908,0,3.478,2.041,3.478,4.522S33.509,28.957,31.601,28.957z"></path></svg></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://twitter.com/canarypunknft" target="_blank" rel="noreferrer"><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="35px" height="35px">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"></path></svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------------- Top section starts ----------------------------------- -->
+    <div class=" main d-flex align-items-md-center py-5 py-sm-0">
+        <div class=" container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="col-12 d-flex justify-content-center">
+                        <video playsinline autoplay loop muted data-video="0" width="80%" style="border-radius: 50%;"><source src="images/hero.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 d-flex justify-content-center align-items-center ">
+                    <div class="col-12 d-flex flex-column">
+                        <!-- <div class="row text-center justify-content-around time">
+                            <div class="col-2 ">
+                                <h3 id="daysTimer">0</h3>
+                                <h4>Days</h4>
+                            </div>
+                            <div class="col-2">
+                                <h3 id="hoursTimer">0</h3>
+                                <h4>Hrs</h4>
+                            </div>
+                            <div class="col-2">
+                                <h3 id="minutesTimer">0</h3>
+                                <h4>Min</h4>
+                            </div>
+                            <div class="col-2">
+                                <h3 id="secondsTimer">0</h3>
+                                <h4>Sec</h4>
+                            </div>
+                        </div> -->
+                        <div class="row mint">
+                            <div class="col-12">
+                                <button class="col-12 py- mintBtn" id="mintBtn" onclick="mintFunction()">MINT!</button>
+                            </div>
+                            <!-- <div class="col-2 px-0">
+                                <select class="form-control px-sm-3 h-100" id="selectBtn">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                  </select>
+                            </div> -->
+                        </div>
+                        <div class="row mt-4 text-center left ">
+                            <div class="col-12">
+                                <h4>50 SGB <span>5000 left !</span> max 10</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------- Fang Who starts ----------------------------------- -->
+    <div class="fang-who text-left text-sm-center">
+        <div class="row pr-0 mr-0 pt-2">
+            <div class="col-2 px-1">
+                <img src="images/fw1.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw2.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw3.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw4.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw5.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw6.png" width="100%" alt="" srcset="">
+            </div>
+        </div>
+        <div class="content col-md-6 mx-auto">
+            <img src="images/Punk who_.svg" width="90%" alt="" srcset="" class="mt-5 mt-md-0">
+            <p class="mt-5">They were once roaming the streets of New Punk City. But now a pack of 5000 Canary punks have assembled with one clear goal in mind; to take over the Songbird blockchain. By far the toughest block in the metaverse.</p>
+            <p> All we know for sure is that they’re randomly generated NFT creatures with the wildest attitude, assembled from over 160 traits and with 3.676.470 possible combinations.</p>
+        </div>
+        <div class="row pr-0 mr-0 pb-2">
+            <div class="col-2 px-1">
+                <img src="images/fw7.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw8.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw9.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw10.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw11.png" width="100%" alt="" srcset="">
+            </div>
+            <div class="col-2 px-1">
+                <img src="images/fw12.png" width="100%" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------- Road map starts -------------------------- -->
+    <div id="roadmap"></div>
+    <div class="roadmap">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 pl-0">
+                    <div class="col-12">
+                        <img src="images/roadmap.svg" width="90%" alt="" srcset="" class="mb-5">
+                        <p>A lot of our plans are long term, so they will happen repeatedly and along the way, while we build the community and grow togSGBer. Collaborations is one of the wildest perks. Happening through exclusive airdrops for holders or
+                            special pieces auctioned within the collection, these will make Canary punks connect with big names in the NFT community such as:</p>
+                        <p>PixelHans, dubbed the 'Son of NFTs'; FatBabFy, supreme artist extraordinaire; and CryptoPervs, OG of the pervy pixels.</p>
+                        <p>These are 3 of the 10 collaboration artists that are confirmed as of now. We will continue to connect with artists and want to have the community be a part of this journey. Besides these huge events, there will also be SGB and
+                            Canary Punks NFT giveaways to holders and occasional challenges to keep the community engaged.</p>
+                        <p class="font-weight-bold">Bite first, talk later. That’s our way</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="col-12">
+                        <div class="row mb-3 right d-flex align-items-stretch">
+                            <div class="col-sm-2 col-3 p-3 text-center percent  d-flex align-items-center">
+                                0%
+                            </div>
+                            <div class="col-8 col-sm-10 text  d-flex align-items-center">
+                                <p class="col-md-9">Giveaways and launch !!!</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 right d-flex align-items-stretch">
+                            <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
+                                25%
+                            </div>
+                            <div class="col-8 col-sm-10 text  d-flex align-items-center">
+                                <p class="col-md-9">
+                                    Collab punks by NFT artists - auctions and exclusive drops to holders
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 right d-flex align-items-stretch">
+                            <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
+                                50%
+                            </div>
+                            <div class="col-8 col-sm-10 text  d-flex align-items-center">
+                                <p class="col-md-9">
+                                    1st charity donation chosen by community </p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 right d-flex align-items-stretch">
+                            <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
+                                75%
+                            </div>
+                            <div class="col-8 col-sm-10 text  d-flex align-items-center">
+                                <p class="col-md-9">
+                                    SGB and NFT giveaways to holders
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 right d-flex align-items-stretch">
+                            <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
+                                100%
+                            </div>
+                            <div class="col-8 col-sm-10 text  d-flex align-items-center">
+                                <p class="col-md-9">
+                                    Premium Merch Store and 2nd charity donation chosen by community </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------- Rarity --------------------------------------- -->
+    <div id="rarity"></div>
+    <div class="rarity">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 pl-0">
+                    <div class="col-12 py-5">
+                        <img src="images/rarity_special.png" width="100%" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-12 py-5">
+                        <img class="mb-3" src="images/rarity.svg" width="250px" alt="" srcset="">
+                        <p>Punks got that drip. Each Punk is comprised of head, face, body, fur and background traits. Each reflecting their personalities.</p>
+                        <p>When going out at night to throw parties or just hangin' in the back alley, they express themselves through their style. Their traits can be common, uncommon, rare or mythic. Some are doper than others, but they're all fit for
+                            a Punk.</p>
+                        <p>Of course every gang has their leaders, so some Punks are Special - 1/1 editions, meaning no one’s ever gonna bite their toes.</p>
+                        <p>You’ll hear them howl in the streets at night about who’s got the most sauce.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-6 text-center">
+                    <img src="images/rarity_common.png" width="100%" alt="" srcset="">
+                    <h4 class="mt-2">Common</h4>
+                </div>
+                <div class="col-md-3 col-6 text-center">
+                    <img src="images/rarity_mythic.png" width="100%" alt="" srcset="">
+                    <h4 class="mt-2">Uncommon</h4>
+                </div>
+                <div class="col-md-3 col-6 text-center">
+                    <img src="images/rarity_special.png" width="100%" alt="" srcset="">
+                    <h4 class="mt-2">Rare</h4>
+                </div>
+                <div class="col-md-3 col-6 text-center">
+                    <img src="images/rarity_uncommon.png" width="100%" alt="" srcset="">
+                    <h4 class="mt-2">Mythic</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------- Charity --------------------------------- -->
+    <div id="charity"></div>
+    <div class="charity">
+        <div class="container py-5">
+            <div class="col-md-6 mx-auto text-left text-sm-center">
+                <img class="mb-4" src="images/charity.svg" width="90%" alt="" srcset="">
+                <p>While the Punks live a good life in the urban jungle, not all creatures on planet Earth share this fortunate lifestyle. That’s why we want to give back part of our profits to NGOs that protect and restore wildlife.</p>
+                <p>This will kick off when we reach both 50% and 100% sold on the roadmap. A donation of 10SGB is planned for each of these milestones, to two different NGOs.</p>
+                <p>These will be chosen by community vote, from a pool of pre-selected options - such as <a href="https://www.rewild.org/" target="_blank">re:wild</a> and <a href="https://rewildingeurope.com/" target="_blank">rewilding Europe</a>. Both donations
+                    will be made through The Giving Block, the #1 crypto donations platform, providing verified transactions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------- Merch store ------------------------------------- -->
+    <div class="merch py-sm-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-12 ">
+                        <img src="images/merch.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 merch-store">
+                    <div class="col-12">
+                        <img class="mb-4 mt-5 mt-md-0" src="images/merch-store.svg" width="350px" alt="">
+                        <p>A real Punk can’t go without catching the latest merch drop. The last milestone on the Canary Punks roadmap is the launch of a premium merch store.</p>
+                        <p>From fresh crewneck sweaters to dope long sleeve tees, 5 panel caps and beanies. These are just some of the goodies we aim to get out there. Some will showcase recognisable Canary Punks imagery and brands from their world, like Wildfangz
+                            and BITE.</p>
+                        <p>And other items will have completely new and unique designs so everyone can rock the sickest fits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------ FAQ ---------------------------- -->
+    <div id="faq"></div>
+    <div class="faq">
+        <div class="container col-md-8 py-5">
+            <img class="d-flex m-auto" src="images/faq.svg" width="400px" alt="">
+
+            <div class="faqs-accordion my-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0 " id="headingOne">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseOne">
+                                    Why join the Canary Punks?
+                                </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseOne"></i>
+                        </div>
+                        <div id="collapseOne" class="collapse pl-0" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body ">
+                                <p> Canary Punks is a collection developed by four NFT fanatic that have been in the NFT space since early March. All of us have worked on previous collections, helped out other communities and are collectors ourselves. </p>
+                                <p>Our roadmap is comprised of real goals. </p>
+                                <p>Besides having a clean, thoughtful collection which we will grow a tightly knit community around, we're committed to help the preservation of wildlife by helping two NGOs along the way.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0 " id="headingTwo">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseTwo">
+                                     What about minting process?
+                                </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseTwo"></i>
+                        </div>
+                        <div id="collapseTwo" class="collapse pl-0" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p> Minting will start on Aug 30th right here, on canarypunk.io. 0.04 SGB per Punk. Max 10 Punks per transaction. The reveal will be the day after launch - 31st of August - because who would want to wait a week just to
+                                    see their sick NFT? </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0 " id="headingThree">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapsSGBree">
+                                    What can I do with my Punk
+                                </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapsSGBree"></i>
+                        </div>
+                        <div id="collapsSGBree" class="collapse pl-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p> Besides having the dopest character represent you on every platform, you'll be able to trade it, use it to enter our giveaways and claim exclusive rewards that are for holders only. Besides that it will also give you a
+                                    voice in our community driven events.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0 " id="headingFour">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseFour">
+                                    Cant't wait to join the gang?
+                                </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseFour"></i>
+                        </div>
+                        <div id="collapseFour" class="collapse pl-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p> Head on over to our Discord server and get involved with the community. Or if you have any questions about NFTs, SGB, the blockchain, OpenSea or anything else! We're happy to help. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-1">
+                        <div class="card-header d-flex align-items-center  pl-0 " id="headingFive">
+                            <button type="button" class="btn btn-link  pl-0 py-0" data-toggle="collapse" data-target="#collapseFive">
+                                    Tokenomicz
+                                </button>
+                            <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseFive"></i>
+                        </div>
+                        <div id="collapseFive" class="collapse pl-0" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p> We have reserved 60 Punks for giveaways, events, collabs and 4 to portray our team members. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------- Team ------------------------------- -->
+    <div id="team"></div>
+    <div class="team pb-5">
+        <div class="container">
+            <img class="d-flex mx-auto mb-4 heading" src="images/team.svg" width="60%" alt="" srcset="">
+            <div class="row pb-5">
+                <div class="col-md-6 mb-3">
+                    <a href="https://twitter.com/CryptoAlpacaNFT" target="_blank">
+                        <div class="col-12 py-3 team1">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="d-flex mx-auto mx-sm-0 profile-pic" src="images/paca.png" width="100%" alt="">
+                                </div>
+                                <div class="col-sm-6 mt-3 mt-sm-0 text-center">
+                                    <h4>- Wanted -</h4>
+                                    <img src="images/paca.svg" width="100%" alt="">
+                                    <hr>
+                                    <p>Artist, Design WHiz, Undercover Memelord</p>
+                                    <hr>
+                                    <p>Wanted for clowning on Juggalos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://twitter.com/JunshiNFT" target="_blank">
+                        <div class="col-12 py-3 team1">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="d-flex mx-auto mx-sm-0 profile-pic" src="images/junshi.jpg" width="100%" alt="">
+                                </div>
+                                <div class="col-sm-6 mt-3 mt-sm-0 text-center">
+                                    <h4>- Wanted -</h4>
+                                    <img src="images/junshi.svg" width="100%" alt="">
+                                    <hr>
+                                    <p>Artist, Design WHiz, Undercover Memelord</p>
+                                    <hr>
+                                    <p>Wanted for clowning on Juggalos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://twitter.com/steamed_bunny" target="_blank">
+                        <div class="col-12 py-3 team1">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="d-flex mx-auto mx-sm-0 profile-pic" src="images/bun.png" width="100%" alt="">
+                                </div>
+                                <div class="col-sm-6 mt-3 mt-sm-0 text-center">
+                                    <h4>- Wanted -</h4>
+                                    <img src="images/bun.svg" width="100%" alt="">
+                                    <hr>
+                                    <p>Artist, Design WHiz, Undercover Memelord</p>
+                                    <hr>
+                                    <p>Wanted for clowning on Juggalos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <a href="https://twitter.com/sincosnft" target="_blank">
+                        <div class="col-12 py-3 team1">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="d-flex mx-auto mx-sm-0 profile-pic" src="images/sincos.png" width="100%" alt="">
+                                </div>
+                                <div class="col-sm-6 mt-3 mt-sm-0 text-center">
+                                    <h4>- Wanted -</h4>
+                                    <img src="images/sincos.svg" width="100%" alt="">
+                                    <hr>
+                                    <p>Artist, Design WHiz, Undercover Memelord</p>
+                                    <hr>
+                                    <p>Wanted for clowning on Juggalos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------- Footer ---------------------------------- -->
+    <div class="footer">
+        <div class="container d-flex align-items-center py-3">
+            <p class="mt-3">2021 Punks</p>
+            <ul class="navbar-nav d-flex flex-row ml-auto">
+                <li class="nav-item mx-2"><a class="nav-link" href="https://opensea.io/collection/canarypunknft" target="_blank" rel="noreferrer"><svg width="35px" height="35px" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 0C20.151 0 0 20.151 0 45C0 69.849 20.151 90 45 90C69.849 90 90 69.849 90 45C90 20.151 69.858 0 45 0ZM22.203 46.512L22.392 46.206L34.101 27.891C34.272 27.63 34.677 27.657 34.803 27.945C36.756 32.328 38.448 37.782 37.656 41.175C37.323 42.57 36.396 44.46 35.352 46.206C35.217 46.458 35.073 46.71 34.911 46.953C34.839 47.061 34.713 47.124 34.578 47.124H22.545C22.221 47.124 22.032 46.773 22.203 46.512ZM74.376 52.812C74.376 52.983 74.277 53.127 74.133 53.19C73.224 53.577 70.119 55.008 68.832 56.799C65.538 61.38 63.027 67.932 57.402 67.932H33.948C25.632 67.932 18.9 61.173 18.9 52.83V52.56C18.9 52.344 19.08 52.164 19.305 52.164H32.373C32.634 52.164 32.823 52.398 32.805 52.659C32.706 53.505 32.868 54.378 33.273 55.17C34.047 56.745 35.658 57.726 37.395 57.726H43.866V52.677H37.467C37.143 52.677 36.945 52.299 37.134 52.029C37.206 51.921 37.278 51.813 37.368 51.687C37.971 50.823 38.835 49.491 39.699 47.97C40.284 46.944 40.851 45.846 41.31 44.748C41.4 44.55 41.472 44.343 41.553 44.145C41.679 43.794 41.805 43.461 41.895 43.137C41.985 42.858 42.066 42.57 42.138 42.3C42.354 41.364 42.444 40.374 42.444 39.348C42.444 38.943 42.426 38.52 42.39 38.124C42.372 37.683 42.318 37.242 42.264 36.801C42.228 36.414 42.156 36.027 42.084 35.631C41.985 35.046 41.859 34.461 41.715 33.876L41.661 33.651C41.553 33.246 41.454 32.868 41.328 32.463C40.959 31.203 40.545 29.97 40.095 28.818C39.933 28.359 39.753 27.918 39.564 27.486C39.294 26.82 39.015 26.217 38.763 25.65C38.628 25.389 38.52 25.155 38.412 24.912C38.286 24.642 38.16 24.372 38.025 24.111C37.935 23.913 37.827 23.724 37.755 23.544L36.963 22.086C36.855 21.888 37.035 21.645 37.251 21.708L42.201 23.049H42.219C42.228 23.049 42.228 23.049 42.237 23.049L42.885 23.238L43.605 23.436L43.866 23.508V20.574C43.866 19.152 45 18 46.413 18C47.115 18 47.754 18.288 48.204 18.756C48.663 19.224 48.951 19.863 48.951 20.574V24.939L49.482 25.083C49.518 25.101 49.563 25.119 49.599 25.146C49.725 25.236 49.914 25.38 50.148 25.56C50.337 25.704 50.535 25.884 50.769 26.073C51.246 26.46 51.822 26.955 52.443 27.522C52.605 27.666 52.767 27.81 52.92 27.963C53.721 28.71 54.621 29.583 55.485 30.555C55.728 30.834 55.962 31.104 56.205 31.401C56.439 31.698 56.7 31.986 56.916 32.274C57.213 32.661 57.519 33.066 57.798 33.489C57.924 33.687 58.077 33.894 58.194 34.092C58.554 34.623 58.86 35.172 59.157 35.721C59.283 35.973 59.409 36.252 59.517 36.522C59.85 37.26 60.111 38.007 60.273 38.763C60.327 38.925 60.363 39.096 60.381 39.258V39.294C60.435 39.51 60.453 39.744 60.471 39.987C60.543 40.752 60.507 41.526 60.345 42.3C60.273 42.624 60.183 42.93 60.075 43.263C59.958 43.578 59.85 43.902 59.706 44.217C59.427 44.856 59.103 45.504 58.716 46.098C58.59 46.323 58.437 46.557 58.293 46.782C58.131 47.016 57.96 47.241 57.816 47.457C57.609 47.736 57.393 48.024 57.168 48.285C56.97 48.555 56.772 48.825 56.547 49.068C56.241 49.437 55.944 49.779 55.629 50.112C55.449 50.328 55.251 50.553 55.044 50.751C54.846 50.976 54.639 51.174 54.459 51.354C54.144 51.669 53.892 51.903 53.676 52.11L53.163 52.569C53.091 52.641 52.992 52.677 52.893 52.677H48.951V57.726H53.91C55.017 57.726 56.07 57.339 56.925 56.61C57.213 56.358 58.482 55.26 59.985 53.604C60.039 53.541 60.102 53.505 60.174 53.487L73.863 49.527C74.124 49.455 74.376 49.644 74.376 49.914V52.812V52.812Z" fill="white"></path></svg></a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="https://discord.gg/JQj2qgs5g6" target="_blank" rel="noreferrer"><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="35px" height="35px"><path d="M42.298,11.65c-0.676-1.021-1.633-1.802-2.768-2.256c-2.464-0.988-4.583-1.648-6.479-2.02	C31.721,7.114,30.404,7.768,29.771,9l-0.158,0.308c-1.404-0.155-2.895-0.207-4.593-0.164c-1.741-0.042-3.237,0.009-4.643,0.164	L20.22,9c-0.633-1.232-1.952-1.885-3.279-1.625c-1.896,0.371-4.016,1.031-6.479,2.02c-1.134,0.454-2.091,1.234-2.768,2.256	c-4.721,7.131-6.571,14.823-5.655,23.517c0.032,0.305,0.202,0.578,0.461,0.741c3.632,2.29,6.775,3.858,9.891,4.936	c1.303,0.455,2.748-0.054,3.517-1.229l1.371-2.101c-1.092-0.412-2.158-0.9-3.18-1.483c-0.479-0.273-0.646-0.884-0.373-1.363	c0.273-0.481,0.884-0.65,1.364-0.373c3.041,1.734,6.479,2.651,9.942,2.651s6.901-0.917,9.942-2.651	c0.479-0.277,1.09-0.108,1.364,0.373c0.273,0.479,0.106,1.09-0.373,1.363c-1.056,0.603-2.16,1.105-3.291,1.524l1.411,2.102	c0.581,0.865,1.54,1.357,2.528,1.357c0.322,0,0.647-0.053,0.963-0.161c3.125-1.079,6.274-2.649,9.914-4.944	c0.259-0.163,0.429-0.437,0.461-0.741C48.869,26.474,47.019,18.781,42.298,11.65z M18.608,28.983c-1.926,0-3.511-2.029-3.511-4.495	c0-2.466,1.585-4.495,3.511-4.495s3.511,2.029,3.511,4.495C22.119,26.954,20.534,28.983,18.608,28.983z M31.601,28.957	c-1.908,0-3.478-2.041-3.478-4.522s1.57-4.522,3.478-4.522c1.908,0,3.478,2.041,3.478,4.522S33.509,28.957,31.601,28.957z"></path></svg></a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="https://twitter.com/canarypunknft" target="_blank" rel="noreferrer"><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="35px" height="35px">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"></path></svg></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/SGBereum/web3.js@1.4.0/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="counter.js"></script> -->
+    <script src="metamask.js"></script>
+</body>
+
+</html>
