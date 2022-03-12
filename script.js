@@ -19,7 +19,6 @@ $( document ).ready(function() {
                 $('#myNumber').val(0);
             }
     })
-
     $(".collapse.show").each(function() {
         $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
     });
@@ -37,3 +36,6 @@ $( document ).ready(function() {
     
 });
 
+function calc_amount(val){
+    $("#mintAmount").val(val);
+}

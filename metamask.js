@@ -1,95 +1,54 @@
-let account=[]
+
+let httpRequest = new XMLHttpRequest(); // asynchronous request
+httpRequest.open("GET", "./abi/SaleRoyaltyAbi.json", true);
+httpRequest.send();
+httpRequest.addEventListener("readystatechange", function() {
+    if (this.readyState === this.DONE) {
+      	// when the request has completed
+        saleRoyaltyabi = JSON.parse(this.response);
+    }
+});
+
+let httpRequest1 = new XMLHttpRequest(); // asynchronous request
+httpRequest1.open("GET", "./abi/CPNKFactoryAbi.json", true);
+httpRequest1.send();
+httpRequest1.addEventListener("readystatechange", function() {
+    if (this.readyState === this.DONE) {
+      	// when the request has completed
+        mintabi = JSON.parse(this.response);
+    }
+});
+let account=[] ;
 async function mintFunction(){
+  console.log(typeof window.ethereum);
   if (typeof window.ethereum === 'undefined') {
     location.href('https://metamask.io/')
+    console.log('error metamask , install metamask please.');
   }else if(account.length==0){
     account = await window.ethereum.request({ method: 'eth_requestAccounts' });
   }else{
-    alert('mint')
+    let mint_amount = document.getElementById('mintAmount').value ;
+    console.log(mint_amount);
+  
+    let provider = ethers.getDefaultProvider();
+    let contractAddress_saleRoyalty = "" ;
+    let contractAddress_mint = "" ;
+    let  contract = new ethers.Contract(contractAddress_saleRoyalty, saleRoyaltyabi, provider);
+    await contract.setSaleRewards() ;
+    contract = new ethers.contract(contractAddress_mint , mintabi , provider ) ;
+    await contract.mintCPNK(mint_amount) ;
   }
 }
 
 window.addEventListener('load', async (event) => {
-  let web3;
-  const web3Warning = document.getElementById('web3-warning');
-
+  // const web3Warning = document.getElementById('web3-warning');
+  console.log('fawef') ;
   if (typeof window.ethereum === 'undefined') {
     console.error('Client does not have an active Web3 provider or the example app is not being run from an HTTP server.');
     console.log('Go here to install MetaMask: https://metamask.io/');
-    web3Warning.classList.remove('hidden');
+    // web3Warning.classList.remove('hidden');
   }
 
   await window.ethereum.request({ method: 'eth_requestAccounts' }); // enable ethereum
-  web3 = new Web3(window.ethereum);
-  const net = +window.ethereum.chainId;
 
-  // This app only works with Ropsten or Main
-  if (net !== 1 && net !== 3) {
-    alert('Please select the Main or Ropsten network.');
-  }
-
-  if (net === 1) {
-    governanceAddress = '0xc0Da02939E1441F497fd74F78cE7Decb17B66529';
-    netProposalId = 54;
-  } else if (net === 3) {
-    governanceAddress = '0x087e98b40f988e0e1d1de476b2b8d2271ac84b33';
-    netProposalId = 73;
-  }
-
-  const ballotListContainer = document.getElementById('ballots');
-  const ballotListTemplate = Handlebars.compile(`
-    {{#each this}}
-    <div class="card">
-      <h4>{{ address }}</h4>
-      <label>Support: </label>&nbsp;<span>{{ support }}</span>
-      <br />
-      <label>Votes: </label>&nbsp;<span>{{ votes }}</span>
-      <br />
-      <label>Reason: </label>&nbsp;<p>{{ reason }}</p>
-    </div>
-  {{/each}}
-  `);
-
-  const id = netProposalId;
-  const proposalElement = document.getElementById('proposal');
-  proposalElement.innerText = proposalElement.innerText + id;
-
-  const governanceAbi = window.governanceAbi;
-  const gov = new web3.eth.Contract(governanceAbi, governanceAddress);
-
-  (async () => {
-    // Tell the user that we're waiting on a request to return data
-    ballotListContainer.innerHTML = '<p style="text-align:center;">Fetching ballots...</p>';
-
-    const voteCastEvents = await gov.getPastEvents('VoteCast', {
-      fromBlock: 0,
-      toBlock: 'latest'
-    });
-
-    let submittedBallots = voteCastEvents;
-    let formattedBallots = [];
-    submittedBallots.forEach((ballot) => {
-      const { voter, support, votes, proposalId, reason } = ballot.returnValues;
-      let supportAsText = 'Against';
-      if (support == 1) {
-        supportAsText = 'In Favor';
-      } else if (support == 2) {
-        supportAsText = 'Abstain';
-      }
-      if (proposalId == id) {
-        formattedBallots.push({
-          blockNumber: ballot.blockNumber,
-          address: voter,
-          support: supportAsText,
-          votes: (parseFloat(votes) / 1e18).toFixed(2),
-          reason,
-        });
-      }
-    });
-
-    formattedBallots.reverse();
-    console.log('ballots', formattedBallots);
-
-    ballotListContainer.innerHTML = ballotListTemplate(formattedBallots);
-  })();
 });

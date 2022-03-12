@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./pixelback.css">
+
     <!-- <link rel="stylesheet" href="snow.scss"> -->
     <title>Home</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top py-0">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg sticky-top py-0 ">
+        <div class="container" >
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" alt="" srcset=""></a>
             <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -30,9 +32,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#roadmap">Roadmap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#rarity">Rarity</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#faq">FAQ</a>
@@ -51,12 +50,14 @@
     </nav>
 
     <!-- ------------------------- Top section starts ----------------------------------- -->
-    <div class=" main d-flex align-items-md-center py-5 py-sm-0">
-        <div class=" container">
+    <div class="snow main d-flex align-items-md-center py-5 py-sm-0 ">            
+        
+        <div class=" container " style="margin-top:20px;">
+
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <div class="col-12 d-flex justify-content-center">
-                        <video playsinline autoplay loop muted data-video="0" width="80%" style="border-radius: 50%;"><source src="images/hero.mp4" type="video/mp4"></video>
+                        <video playsinline autoplay loop muted data-video="0" width="80%" style="border: 10px solid #7d88f0;"><source src="images/hero.mp4" type="video/mp4"></video>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5 d-flex justify-content-center align-items-center ">
@@ -79,9 +80,19 @@
                                 <h4>Sec</h4>
                             </div>
                         </div> -->
-                        <div class="row mint">
-                            <div class="col-12">
-                                <button class="col-12 py- mintBtn" id="mintBtn" onclick="mintFunction()">MINT!</button>
+                        <div class="row mint" style="justify-content: center;">
+                            <div class="col-10 mintsection">
+                                <button class="col-12  mintBtn" id="mintBtn" onclick="mintFunction()">MINT!</button>
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">num</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a onclick = 'calc_amount("1")' >1</a>
+                                        <a onclick = 'calc_amount("2")' >2</a>
+                                        <a onclick = 'calc_amount("3")' >3</a>
+                                        <a onclick = 'calc_amount("4")' >4</a>
+                                        <a onclick = 'calc_amount("5")' >5</a>
+                                    </div>
+                                </div>
                             </div>
                             <!-- <div class="col-2 px-0">
                                 <select class="form-control px-sm-3 h-100" id="selectBtn">
@@ -95,10 +106,12 @@
                         </div>
                         <div class="row mt-4 text-center left ">
                             <div class="col-12">
-                                <h4>50 SGB <span>5000 left !</span> max 10</h4>
-
+                                <h4>500 SGB <span>5000 left !</span> max 10</h4>
                             </div>
                         </div>
+                        <h4>10% of every mint fee is reflected back to all Canary Punk holders</h4>
+                        <!-- <p>Born in the mean streets of New Punk City, a gang of 5000 Canary Punks have assembled with one clear goal in mind; to take over the Songbird blockchain. By far the toughest blockchain in the metaverse.</p> -->
+                        <!-- <p>All we know for sure is that they’re randomly generated Degen Punks with the craziest personalities and love for NFT's, assembled from over 150 traits, with no two Punks being the same.</p> -->
                     </div>
                 </div>
             </div>
@@ -129,8 +142,8 @@
         </div>
         <div class="content col-md-6 mx-auto">
             <img src="images/Punk who_.svg" width="90%" alt="" srcset="" class="mt-5 mt-md-0">
-            <p class="mt-5">They were once roaming the streets of New Punk City. But now a pack of 5000 Canary punks have assembled with one clear goal in mind; to take over the Songbird blockchain. By far the toughest block in the metaverse.</p>
-            <p> All we know for sure is that they’re randomly generated NFT creatures with the wildest attitude, assembled from over 160 traits and with 3.676.470 possible combinations.</p>
+            <p class="mt-5">Born in the mean streets of New Punk City, a gang of 5000 Canary Punks have assembled with one clear goal in mind; to take over the Songbird blockchain. By far the toughest blockchain in the metaverse.</p>
+            <p> Born in the mean streets of New Punk City, a gang of 5000 Canary Punks have assembled with one clear goal in mind; to take over the Songbird blockchain. By far the toughest blockchain in the metaverse.</p>
         </div>
         <div class="row pr-0 mr-0 pb-2">
             <div class="col-2 px-1">
@@ -162,34 +175,52 @@
                 <div class="col-lg-6 pl-0">
                     <div class="col-12">
                         <img src="images/roadmap.svg" width="90%" alt="" srcset="" class="mb-5">
-                        <p>A lot of our plans are long term, so they will happen repeatedly and along the way, while we build the community and grow togSGBer. Collaborations is one of the wildest perks. Happening through exclusive airdrops for holders or
-                            special pieces auctioned within the collection, these will make Canary punks connect with big names in the NFT community such as:</p>
-                        <p>PixelHans, dubbed the 'Son of NFTs'; FatBabFy, supreme artist extraordinaire; and CryptoPervs, OG of the pervy pixels.</p>
-                        <p>These are 3 of the 10 collaboration artists that are confirmed as of now. We will continue to connect with artists and want to have the community be a part of this journey. Besides these huge events, there will also be SGB and
-                            Canary Punks NFT giveaways to holders and occasional challenges to keep the community engaged.</p>
-                        <p class="font-weight-bold">Bite first, talk later. That’s our way</p>
+                        <p>10% of our minting fees are reflected back to all Canary Punk holders, for example, if someone mints 1 Canary Punk at a cost of 500 SGB
+                            10% of this is distributed to all holders of Canary Punks at the time of mint, the earlier you mint and the more punks you hold
+                            The more you gain in rewards. These rewards will be claimable on our website.</p>
+                        <p>For every 25% completion of mint, we will host special giveaways for our holders!</p>
+                        <p>A 5% royalty fee is placed on each Canary Punk sale and reflected back to all Canary Punk holders just like our minting fee.
+                            When a sale is made on a marketplaces that support the EIP-2981 Royalty standard, this fee is then distributed to all Canary Punk
+                            holders at the time of the sale. The higher the price of the sale, the higher rewards everyone receives! Don't let your Punk go
+                            unless the price is right!
+                            </p>
+                        <p>Some marketplaces don't support the EIP-2981 Royalty standard, so sales done here will not be applied to them. If EIP-2981 is supported
+                            our royalty fee will be added ontop their marketplace fee.</p>
+                        <p>Our own marketplace will be in the works with royalties to all partner projects/collabs, providing utility for everyone within the SGB network.</p>
+                        <p>More utility unlocks and benefits for Canary Punks (NFT staking for rewards)</p>
+                        <p>Our own marketplace will be in the works with royalties to all partner projects/collabs, providing utility for everyone within the SGB network.</p>
+
+
                     </div>
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="col-12">
+                    <div class="col-12" >
                         <div class="row mb-3 right d-flex align-items-stretch">
                             <div class="col-sm-2 col-3 p-3 text-center percent  d-flex align-items-center">
                                 0%
                             </div>
                             <div class="col-8 col-sm-10 text  d-flex align-items-center">
-                                <p class="col-md-9">Giveaways and launch !!!</p>
+                                <p class="col-md-9">Get rewards for minting rares! (mint a Gold coin trait, get SGB rewards)</p>
                             </div>
                         </div>
-
                         <div class="row mb-3 right d-flex align-items-stretch">
                             <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
-                                25%
+                                15%
                             </div>
                             <div class="col-8 col-sm-10 text  d-flex align-items-center">
                                 <p class="col-md-9">
-                                    Collab punks by NFT artists - auctions and exclusive drops to holders
+                                    Trait/ACR giveaways (rarer punks get higher giveaway rewards)
                                 </p>
+                            </div>
+                        </div>
+                        <div class="row mb-3 right d-flex align-items-stretch">
+                            <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
+                                30%
+                            </div>
+                            <div class="col-8 col-sm-10 text  d-flex align-items-center">
+                                <p class="col-md-9">
+                                    Marketplace for Canary Punks and Partners (aswell as our limited edition airdrops)</p>
                             </div>
                         </div>
 
@@ -199,27 +230,33 @@
                             </div>
                             <div class="col-8 col-sm-10 text  d-flex align-items-center">
                                 <p class="col-md-9">
-                                    1st charity donation chosen by community </p>
+                                    Limited Edition NFT airdrops (rare/low supply NFT collections)
                             </div>
                         </div>
 
                         <div class="row mb-3 right d-flex align-items-stretch">
                             <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
-                                75%
+                                60%
                             </div>
                             <div class="col-8 col-sm-10 text  d-flex align-items-center">
                                 <p class="col-md-9">
-                                    SGB and NFT giveaways to holders
-                            </div>
+                                    Artist Commisioning (exposure for our creative community)</div>
                         </div>
-
+                        <div class="row mb-3 right d-flex align-items-stretch">
+                            <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
+                                80%
+                            </div>
+                            <div class="col-8 col-sm-10 text  d-flex align-items-center">
+                                <p class="col-md-9">
+                                    More utility unlocks and benefits for Canary Punks (NFT staking for rewards)</div>
+                        </div>
                         <div class="row mb-3 right d-flex align-items-stretch">
                             <div class="col-3 col-sm-2 p-3 text-center percent d-flex align-items-center">
                                 100%
                             </div>
                             <div class="col-8 col-sm-10 text  d-flex align-items-center">
                                 <p class="col-md-9">
-                                    Premium Merch Store and 2nd charity donation chosen by community </div>
+                                    Canary Punks merch store (get your Canary Punk IRL drip!)</div>
                         </div>
                     </div>
                 </div>
@@ -228,48 +265,9 @@
     </div>
 
     <!-- ----------------------------------- Rarity --------------------------------------- -->
-    <div id="rarity"></div>
-    <div class="rarity">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-6 pl-0">
-                    <div class="col-12 py-5">
-                        <img src="images/rarity_special.png" width="100%" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="col-12 py-5">
-                        <img class="mb-3" src="images/rarity.svg" width="250px" alt="" srcset="">
-                        <p>Punks got that drip. Each Punk is comprised of head, face, body, fur and background traits. Each reflecting their personalities.</p>
-                        <p>When going out at night to throw parties or just hangin' in the back alley, they express themselves through their style. Their traits can be common, uncommon, rare or mythic. Some are doper than others, but they're all fit for
-                            a Punk.</p>
-                        <p>Of course every gang has their leaders, so some Punks are Special - 1/1 editions, meaning no one’s ever gonna bite their toes.</p>
-                        <p>You’ll hear them howl in the streets at night about who’s got the most sauce.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 col-6 text-center">
-                    <img src="images/rarity_common.png" width="100%" alt="" srcset="">
-                    <h4 class="mt-2">Common</h4>
-                </div>
-                <div class="col-md-3 col-6 text-center">
-                    <img src="images/rarity_mythic.png" width="100%" alt="" srcset="">
-                    <h4 class="mt-2">Uncommon</h4>
-                </div>
-                <div class="col-md-3 col-6 text-center">
-                    <img src="images/rarity_special.png" width="100%" alt="" srcset="">
-                    <h4 class="mt-2">Rare</h4>
-                </div>
-                <div class="col-md-3 col-6 text-center">
-                    <img src="images/rarity_uncommon.png" width="100%" alt="" srcset="">
-                    <h4 class="mt-2">Mythic</h4>
-                </div>
-            </div>
-        </div>
+    <div class="kinde">
+       
     </div>
-
     <!-- --------------------------------- Charity --------------------------------- -->
     <div id="charity"></div>
     <div class="charity">
@@ -488,6 +486,7 @@
                 <li class="nav-item mx-2"><a class="nav-link" href="https://twitter.com/canarypunknft" target="_blank" rel="noreferrer"><svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="35px" height="35px">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"></path></svg></a></li>
             </ul>
         </div>
+        <input type="hidden" id="mintAmount" name="mintAmount" value = '1'>
     </div>
 
 
@@ -497,17 +496,42 @@
 
 
 
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/SGBereum/web3.js@1.4.0/dist/web3.min.js"></script>
+    <script data-main="scripts/app" src="scripts/require.js"></script>
+
     <script src="script.js"></script>
     <!-- <script src="counter.js"></script> -->
     <script src="metamask.js"></script>
 </body>
+<script>
+    var pix = document.getElementsByClassName("pixel");
 
+    for (var i = 0; i < pix.length; i++) {
+      pix[i].style.animationDelay = Math.ceil(Math.random()*5000)+"ms";
+    }
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+  </script>
 </html>

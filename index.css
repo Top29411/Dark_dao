@@ -19,7 +19,8 @@ body {
 }
 
 .navbar {
-    background-color: #6950d0;
+    background-color: #2b8d07
+    ;
     color: #ffff;
     text-transform: uppercase;
 }
@@ -60,7 +61,7 @@ body {
 
 .main {
     height: 90vh;
-    background-color: #6950d0;
+    background-color: #2f10e2;
     color: #ffff;
 }
 
@@ -74,9 +75,34 @@ body {
     text-transform: uppercase;
 }
 
+div.mintsection{
+    display: flex;
+    justify-content: center;
+}
 button.mintBtn {
     background-color: #ed9419;
     font-size: 2rem;
+    font-weight: 700;
+    color: #930;
+    border: 6px solid #f94;
+    padding: 16px 30px 8px;
+    /* box-shadow: 0 10px 0 #d61, 0 0 30px rgb(0 0 0 / 30%); */
+}
+
+button.mintBtn:hover {
+    background-color: #e4a958;
+    color: white;
+    box-shadow: none;
+    /* transform: translateY(4px); */
+}
+
+button.mintBtn_change {
+    height: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #ed9419;
+    font-size: 5rem;
     font-weight: 700;
     color: #930;
     border: 6px solid #f94;
@@ -85,7 +111,11 @@ button.mintBtn {
 }
 
 
-button.mintBtn:hover {
+button.mintBtn_change:hover {
+    height: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     background-color: #e4a958;
     color: white;
     box-shadow: none;
@@ -148,11 +178,20 @@ button.mintBtn:hover {
     }
 }
 
-
+@media screen and (max-width: 425px){
+    .fang-who .content img {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 350px){
+    .fang-who .content img {
+        width: 285px;
+    }
+}
 /* ---------------------------------- Road map --------------------------- */
 
 .roadmap {
-    background-color: #6950d0;
+    background-color: #2f10e2;
     color: #ffff;
 }
 
@@ -167,6 +206,10 @@ button.mintBtn:hover {
     font-size: 20px;
     font-weight: 600;
 }
+.roadmap .right_size .text {
+    font-size:  20px;
+    font-weight: 500;
+}
 
 
 /* -------------------------------- Rarity ------------------------------- */
@@ -175,7 +218,11 @@ button.mintBtn:hover {
     background-color: #262022;
     color: white;
 }
-
+.kinde{
+    width: 100%;
+    height: 40px;
+    background: #161c58;
+}
 .rarity p {
     font-size: 18px;
 }
@@ -184,7 +231,7 @@ button.mintBtn:hover {
 /* ----------------------------------- Charity -------------------------------- */
 
 .charity {
-    background-color: #6950d0;
+    background-color: #2f10e2;
     color: #ffff;
 }
 
@@ -218,7 +265,7 @@ button.mintBtn:hover {
 /* --------------------------------------- FAQs---------------------------------------------- */
 
 .faq {
-    background-color: #6950d0;
+    background-color: #2f10e2;
     color: #ffff;
 }
 
@@ -272,7 +319,7 @@ button.mintBtn:hover {
 /* -------------------------------------- Team ------------------------------------- */
 
 .team {
-    background-color: #6950d0;
+    background-color: #2f10e2;
     color: #ffff;
 }
 
@@ -334,7 +381,7 @@ button.mintBtn:hover {
     left:0;
     right:0;
     bottom:0;
-    background-image: url('./images/Untitled-1.png'), url('./images/Untitled-2.png'), url('./images/Untitled-3.png');
+    background-image: url('./images/snow1.png'), url('./images/snow2.png'), url('./images/snow3.png');
     z-index:100;
     -webkit-animation: snow 10s linear infinite;
     -moz-animation: snow 10s linear infinite;
@@ -363,3 +410,61 @@ button.mintBtn:hover {
   }
 
 
+  .mint_amount {
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-around;
+  }
+.mint_number{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    display: flex;
+    position: relative;
+    /* display: inline-block; */
+    flex-wrap: wrap;
+    align-content: stretch;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 60px;
+    overflow: hidden  ;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    background-color: #3498dbed;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .dropdown a:hover {
+      background-color: #062235ed;
+      /* transform: translateY(4px); */
+  }  
+  
+  .show {display: block;}
